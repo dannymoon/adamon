@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    </head>
+    <body>
+        <div class="container">
+            <h2>Thank you for you business!</h2>
+            <h3>We charged your credit card for ${{request.session.price}}</h3>
+            <h3>You have ordered {{request.session.quantity_ordered}} itmes so far and spent ${{request.session.total_price}} with Amadon.com!</h3>
+            <a href="/amadon">Go back</a>
+        </div>
+    </body>
+</html>
